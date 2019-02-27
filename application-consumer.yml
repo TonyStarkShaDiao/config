@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: consumer
+server:
+  port: 8090
+eureka:
+
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    prefer-ip-address: true
+ribbon:
+  eureka:
+    enabled: true
