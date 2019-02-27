@@ -1,0 +1,25 @@
+﻿server:
+  port: 8771
+
+
+
+#指定注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka
+#    instance:
+#      ip-address: 47.105.135.95
+#      prefer-ip-address: true
+#服务的名称
+spring:
+  application:
+    name: hystrix
+feign:
+  hystrix:
+    enabled: true
+management:
+  security:
+    enabled: false
+
+
